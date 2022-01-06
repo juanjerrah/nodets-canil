@@ -84,6 +84,9 @@ h2 {
 }
 
 .no-list {
+    display: flex;
+    width: 900px;
+    justify-content: center;
     margin-bottom: 50px;
 }
 .list {

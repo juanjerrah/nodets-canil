@@ -24,8 +24,8 @@ server.use(mainRoutes);
 
 
 //Pagina 404
-server.get('/', (req: Request, res: Response)=>{
-    res.status(404).send('ERROR 404 - Page Not Found!')
+server.use((req: Request, res: Response)=>{
+    res.status(404).render('pages/404');
 });
 
 
